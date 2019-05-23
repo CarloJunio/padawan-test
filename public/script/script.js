@@ -23,7 +23,7 @@ $(document).ready(function(){
       data:formulario,
       cache:false,
       success: function(data){
-          console.log(data);
+        window.location.replace(data);
       }
          });
     });
