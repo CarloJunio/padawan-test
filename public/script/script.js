@@ -3,7 +3,7 @@ function alphanumeric(inputOnlysix)
    var letters = /\b[a-zA-Z0-9]{6}\b/;
    if(inputOnlysix.value.match(letters))
      {  
-        var form = $this.closest('form');
+        var form = $(this).closest('form');
         var formulario = form.serialize();
         console.log(formulario);
         $.ajax({
