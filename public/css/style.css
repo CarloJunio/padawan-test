@@ -1,0 +1,23 @@
+		body {
+ 		background-image: url("../img/galaxy.jpg");
+ 		-webkit-background-size: cover;
+ 	 	-moz-background-size: cover;
+ 	 	-o-background-size: cover;
+  		background-size: cover;
+		}
+		img{
+			height: 200px;
+  			width: 200px;
+  			margin-top:250px;
+  			margin-bottom: 20px;
+		}
+		.input{
+		    margin: auto;
+		    float: none;
+		}
+		.placeholder-align{
+			text-align:center; 
+		}
+		.inputB{
+			margin-top: 10px !important;
+		}
