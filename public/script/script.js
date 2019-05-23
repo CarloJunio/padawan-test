@@ -18,31 +18,13 @@ $(document).ready(function(){
     var formulario = form.serialize();
     console.log('formulario',formulario);
     $.ajax({
-        url: 'https://r2d2-secret-pass.herokuapp.com/validate',
-        type: 'get',
-        headers: { 'Access-Control-Allow-Origin': '*' },
-        // This is the important part
-        xhrFields: {
-            withCredentials: true
-        },
-        // This is the important part
-        data: formulario,
-        success: function (response) {
-            console.log(response);
-        },
-        error: function (xhr, status) {
-            console.log(xhr,status);
-        }
-
-    // $.ajax({
-    //   type:'GET',
-    //   url:'https://r2d2-secret-pass.herokuapp.com/validate',
-    //   data:formulario,
-    //   dataType:'json',
-    //   cache:false,
-    //   success: function(data){
-    //       console.log(data);
-    //   }
+      type:'GET',
+      url:'https://r2d2-secret-pass.herokuapp.com/validate',
+      data:formulario,
+      cache:false,
+      success: function(data){
+          console.log(data);
+      }
          });
     });
 });
