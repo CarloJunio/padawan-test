@@ -20,9 +20,7 @@ $(document).ready(function(){
     $.ajax({
         url: 'https://r2d2-secret-pass.herokuapp.com/validate',
         type: 'get',
-        header:{"Access-Control-Allow-Headers":"*"},
-        header:{'Access-Control-Allow-Credentials': true},
-        header:{'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE'},
+        headers: { 'Access-Control-Allow-Origin': '*' },
         // This is the important part
         xhrFields: {
             withCredentials: true
@@ -33,7 +31,7 @@ $(document).ready(function(){
             console.log(response);
         },
         error: function (xhr, status) {
-            // handle errors
+            console.log(xhr,status);
         }
 
     // $.ajax({
