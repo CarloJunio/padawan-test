@@ -23,7 +23,6 @@ $(document).ready(function(){
         header:{"Access-Control-Allow-Headers":"*"},
         header:{'Access-Control-Allow-Credentials': true},
         header:{'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE'},
-        dataType:json,
         // This is the important part
         xhrFields: {
             withCredentials: true
