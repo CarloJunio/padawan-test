@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="public/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="public/script/script.js"></script>
+	<title>Padawan Test</title>
+</head>
+<body>
+	<img src="public/img/rebel.png" alt="rebels" class="rounded mx-auto d-block">
+	<form name="form1" class="form-group">
+		<div class="col-md-2 input">
+			<input type="text" maxlength="6" class="form-control placeholder-align" name="text1" placeholder="PASS"> 
+		</div>		
+		<div class="col text-center">
+			<input type="submit" name="submit" value="ACESSAR!" class="btn btn-danger inputB" onclick="alphanumeric(document.form1.text1)"/>
+		</div>
+	</form>
+</body>
+</html>
