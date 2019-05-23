@@ -30,7 +30,7 @@ $(document).ready(function(){
             console.log(response);
         },
         error: function (xhr, status) {
-            // handle errors
+            console.log(xhr,status);
         }
 
     // $.ajax({
