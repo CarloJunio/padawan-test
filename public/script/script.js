@@ -6,7 +6,8 @@ function alphanumeric(inputOnlysix)
         $.get( "https://r2d2-secret-pass.herokuapp.com/validate", function( data ) {
           console.log(data);
           alert( "Load was performed." );
-        });     
+        });
+        return true;     
       }
    else
      {
