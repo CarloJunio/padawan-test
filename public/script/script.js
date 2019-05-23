@@ -2,10 +2,19 @@ function alphanumeric(inputOnlysix)
   {
    var letters = /\b[a-zA-Z0-9]{6}\b/;
    if(inputOnlysix.value.match(letters))
-     {
-        $.get( "https://r2d2-secret-pass.herokuapp.com/validate", function( data ) {
-          console.log(data);
-          alert( "Load was performed." );
+     {  
+        var form = $this.closest('form');
+        var formulario = form.serialize();
+        console.log(formulario);
+        $.ajax({
+            type:'GET',
+            url:'https://r2d2-secret-pass.herokuapp.com/validate'
+            data:formulario,
+            dataType:'json',
+            cache:false,
+            success: function(data){
+                console.log(data);
+            }
         });
         return true;     
       }
