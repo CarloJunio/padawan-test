@@ -19,8 +19,13 @@
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		heigh:100vh;
+		height: 100vh;
+		}
+		@media only screen and (max-width: 767px) {
+  		html {
+        	background-image: url("../img/galaxy_mobile.jpg");
+  		}
 		}
 		body { 
-		background-color: transparent !important;
-		}
+			background-color: transparent !important;
+			 }
