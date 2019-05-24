@@ -12,6 +12,7 @@ $(document).ready(function(){
         }
 
     });
+
     $('#form1').on('submit', function(event) {
         event.preventDefault();
         if (alphanumeric()) {
@@ -28,13 +29,12 @@ $(document).ready(function(){
 
 // alpha
 function alphanumeric()
-{   var input = $("#pass").val();
-var letters = /\b[a-zA-Z0-9]{6}\b/;
-if(input.match(letters))
-{ 
-
+{var input = $("#pass").val();
+ var letters = /\b[a-zA-Z0-9]{6}\b/;
+ if(input.length == 6 && input.match(letters))
+ { 
     return true;     
-}
+ }
 }
 
 
