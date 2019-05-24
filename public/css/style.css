@@ -13,13 +13,14 @@ text-align:center;
 margin-top: 10px !important;
 }
 
-html { 
-background: url("../img/galaxy.jpg") center center; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-height: 100vh;
+html {
+    background: url(image url) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 body { 
 background-color: transparent !important;
@@ -28,23 +29,4 @@ background-color: transparent !important;
 input{
 width: 40% !important;
 margin: auto !important;
-}
-
-
-@media (max-width: 900px) {
-html {
-background: url("../img/galaxy_mobile.jpg") no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-height: 100%;
-overflow: hidden;
-}
-}
-input{
-width: 60%!important;
-height:150% !important;	
-background-size: fixed!important;
-}
 }
