@@ -12,6 +12,18 @@ $(document).ready(function(){
         }
 
     });
+    $('#form1').on('submit', function(event) {
+        event.preventDefault();
+        if (alphanumeric()) {
+            ajax();
+        }else
+        {
+            alert('ACESSO INVÁLIDO');
+            location.reload();
+        }
+
+    });
+
 });
 
 // alpha
