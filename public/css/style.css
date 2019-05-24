@@ -26,11 +26,11 @@ body {
 background-color: transparent !important;
 }
 
-input{
+/*input{
 width: 40% !important;
 margin: auto !important;
 }
-
+*/
 
 @media (max-width: 1000px) {
 html {
@@ -42,8 +42,8 @@ background-size: cover;
 height: 100%;
 overflow: hidden;
 }
-input{
+/*input{
 width: 60%!important;
 height:150% !important;	
-}
+}*/
 }
