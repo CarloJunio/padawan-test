@@ -21,14 +21,22 @@ background: url("../img/galaxy.jpg") center center;
 background-size: cover;
 height: 100vh;
 }
-
-@media only screen and (max-width: 767px) {
-html {
-/* The file size of this background image is 93% smaller
-to improve page load speed on mobile internet connections */
-background: url("../img/galaxy_mobile.jpg");
-}
-}
 body { 
 background-color: transparent !important;
+}
+
+input{
+width: 40% !important;
+margin: auto !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+html {
+background: url("../img/galaxy_mobile.jpg")!important;
+}
+input{
+width: 60%!important;
+height:150% !important;	
+}
 }
