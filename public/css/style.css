@@ -1,31 +1,34 @@
-		img{
-			height: 200px;
-  			width: 200px;
-  			margin-top:250px;
-  			margin-bottom: 20px;
-		}
+img{
+height: 200px;
+width: 200px;
+margin-top:250px;
+margin-bottom: 20px;
+}
 
-		.placeholder-align{
-			text-align:center; 
-		}
-		.inputB{
-			margin-top: 10px !important;
-		}
+.placeholder-align{
+text-align:center; 
+}
 
+.inputB{
+margin-top: 10px !important;
+}
 
-		html { 
-		background: url("../img/galaxy.jpg") no-repeat center center / fixed; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		height: 100vh;
-		}
-		@media only screen and (max-width: 767px) {
-  		html {
-        	background-image: url("../img/galaxy_mobile.jpg");
-  		}
-		}
-		body { 
-			background-color: transparent !important;
-			 }
+html { 
+background: url("../img/galaxy.jpg") center center; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+html {
+/* The file size of this background image is 93% smaller
+to improve page load speed on mobile internet connections */
+background: url("../img/galaxy_mobile.jpg");
+}
+}
+body { 
+background-color: transparent !important;
+}
