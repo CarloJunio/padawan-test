@@ -7,7 +7,7 @@ $(document).ready(function(){
             ajax();
         }else
         {
-            alert('ERROR');
+            alert('ACESSO INVÁLIDO');
             location.reload();
         }
 
