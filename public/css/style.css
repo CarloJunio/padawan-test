@@ -19,6 +19,7 @@
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		heigh:100vh;
 		}
 		body { 
 		background-color: transparent !important;
