@@ -7,6 +7,7 @@ $(document).ready(function(){
         }else
         {
             alert('ERROR');
+            location.reload();
         }
 
     });
