@@ -31,7 +31,7 @@ margin: auto !important;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 900px) {
 html {
 background: url("../img/galaxy_mobile.jpg")!important;
 height: 200px;
