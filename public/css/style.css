@@ -1,11 +1,7 @@
 img{
 height: 200px;
 width: 200px;
-/* margin-top:250px;
-margin-bottom: 20px; */
 }
-
-
 
 .placeholder-align{
 text-align:center; 
@@ -28,12 +24,6 @@ body {
 background-color: transparent !important;
 }
 
-/*input{
-width: 40% !important;
-margin: auto !important;
-}
-*/
-
 @media (max-width: 1000px) {
 html {
 background: url(../img/galaxy_mobile.jpg) no-repeat center center fixed;
@@ -44,8 +34,4 @@ background-size: cover;
 height: 100%;
 overflow: hidden;
 }
-/*input{
-width: 60%!important;
-height:150% !important;	
-}*/
 }
