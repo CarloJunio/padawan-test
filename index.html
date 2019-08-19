@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="public/css/style.css" rel="stylesheet">
-	<script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="public/script/script.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<title>Padawan Test</title>
 </head>
-<body>	
-	
+
+<body>
+
 	<div class="container">
 		<div class="box-acesso">
 			<form id="form1">
@@ -22,12 +27,13 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 offset-md-4 col-md-4">
-						<input type="text" class="form-control placeholder-align" name="pass" placeholder="PASS" id="pass">
+						<input type="text" class="form-control placeholder-align" name="pass" minlenght="12"
+							maxlength="12" placeholder="PASS" id="pass">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-12 offset-md-4 col-md-4 text-center">
-						<button type="button" name="submit" value="ACESSAR!" class="submit btn btn-danger inputB"">ACESSAR</button>
+						<button type="submit" class="botao btn btn-danger inputB">ENVIAR MENSAGEM</button>
 					</div>
 				</div>
 			</form>
@@ -35,4 +41,5 @@
 	</div>
 
 </body>
+
 </html>
