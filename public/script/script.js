@@ -11,7 +11,7 @@ $(document).ready(function () {
             ajax();
             return true;
         } else {
-            alert("FORMATO INVÁLIDO");
+            swal("ATENÇÃO!", "FORMATO INVÁLIDO", "warning");
         }
     });
 });
@@ -32,15 +32,15 @@ function ajax() {
     console.log('formulario', formulario);
     $.ajax({
         type: 'GET',
-        url: 'http://www.pennawd.com.br/webservice.php',
+        url: 'https://bb8-send-pass.herokuapp.com/send-pass',
         data: formulario,
         dataType: 'JSON',
         success: function (data) {
             console.log(data);
-            swal("COMPLETE!","Authorization:" + data.authorization + "\nMessage:" + data.message,"success");
+            swal("SUCESSO!","Authorization:" + data.authorization + "\nMessage:" + data.message,"success");
         },
         error: function () {
-            alert("SENHA INVALIDA");
+            swal("ERRO!", "SENHA INVÁLIDA", "error");
         }
     });
 }
